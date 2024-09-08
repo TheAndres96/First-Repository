@@ -1,23 +1,23 @@
 body{
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 0; /* Removes default margin around page */
 }
 
 h1, h2{
-    text-align: center;
+    text-align: center; /* Centers Horizontally*/
 }
 
 .input-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    display: flex; /* Applies Flexbox to container*/
+    flex-direction: row; /* Horizontal Row*/
+    justify-content: space-between; /* Distribute space between element so they spread out across container*/
+    align-items: center; /* Vertically aligns element within flex container*/ 
+    padding: 10px; /*Add space around content*/
 }
 
 .input-section label{
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 10px; /* Add space to right of labels to separate*/
 }
 
 .input-section input [type="number"], .input-section input[type="data"]{
@@ -26,25 +26,25 @@ h1, h2{
 }
 
 .input-section button {
-    padding: 5px 10px;
+    padding: 5px 10px; /*Vertical, Horizontal*/
     background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+    color: white; /*Text white*/
+    border: none; /*Removes default border*/
+    border-radius: 4px; /*rounds corner*/
+    cursor: pointer; /*Clickable*/
+} 
 
 .expenses-list{
     margin: 20px;
 }
 
 table{
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /*Takes full width of container*/
+    border-collapse: collapse; /*single border*/
 }
 
 th, td{
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /*add light grey border around*/
     padding: 8px;
     text-align: left;
 }

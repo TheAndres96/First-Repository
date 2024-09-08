@@ -1,6 +1,7 @@
-let expenses =[];
+let expenses =[]; /*Empty Array */
 let totalAmount = 0;
 
+/*Hold reference to HTML elements */
 const categorySelect = document.getElementById('category-select');
 const amountInput = document.getElementById('amount-input');
 const dateInput = document.getElementById('date-input');
@@ -42,7 +43,7 @@ addBtn.addEventListener('click', function() {
     deleteBtn.textContent = 'Delete';
     deleteBtn.classList.add('delete-btn');
     deleteBtn.addEventListener('click', function() {
-        expenses.splice(expenses.indexOf(expense),1);
+        expenses.splice(expenses.indexOf(expense),1); /*Button is pressed and expense is removed from array */
 
         totalAmount -= expense.amount;
         totalAmountCell.textContent = totalAmount;
